@@ -24,7 +24,7 @@ if nombre_input:
 # -----------------------------
 # BOTÓN REINICIAR QUIZ
 # -----------------------------
-if st.button("Reiniciar Quiz"):
+if st.button("🔄 Reiniciar Quiz"):
     st.session_state.clear()
     st.rerun()
 
@@ -42,10 +42,22 @@ for i, p in enumerate(st.session_state.quiz):
     respuesta = st.radio(
         p["pregunta"],
         p["opciones"],
-        key=i
+        key=f"pregunta_{i}"
     )
     respuestas_usuario.append(respuesta)
 
 # -----------------------------
-# VER RESULTADOS
+# BOTÓN CALIFICAR QUIZ
 # -----------------------------
+if st.button("✅ Calificar Quiz"):
+
+    if st.session_state.nombre == "":
+        st.warning("⚠️ Por favor ingresa tu nombre antes de calificar.")
+    else:
+        puntaje = 0
+
+        for i, p in enumerate(st.session_state.quiz):
+            if respuestas_usuario[i] == p["respuesta"]:
+                puntaje += 1
+
+        st.success(f"🎉 Felicidades {st.session_state.nombre}, tu puntaje es: {puntaje}/4")
