@@ -11,6 +11,17 @@ with open("preguntas.json", "r", encoding="utf-8") as file:
 st.title("Quiz: Procesos y Mejora Continua en Ingeniería Industrial")
 
 # -----------------------------
+# INGRESAR NOMBRE
+# -----------------------------
+if "nombre" not in st.session_state:
+    st.session_state.nombre = ""
+
+nombre_input = st.text_input("Ingresa tu nombre:")
+
+if nombre_input:
+    st.session_state.nombre = nombre_input
+
+# -----------------------------
 # BOTÓN REINICIAR QUIZ
 # -----------------------------
 if st.button("Reiniciar Quiz"):
@@ -38,12 +49,4 @@ for i, p in enumerate(st.session_state.quiz):
 # -----------------------------
 # VER RESULTADOS
 # -----------------------------
-if st.button("Ver resultados"):
-    puntaje = 0
-
-    for i, p in enumerate(st.session_state.quiz):
-        if respuestas_usuario[i] == p["respuesta"]:
-            puntaje += 1
-
-    st.success(f"Tu puntaje es: {puntaje}/4")
-
+if st.
