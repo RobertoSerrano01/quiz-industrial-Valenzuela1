@@ -49,4 +49,3 @@ for i, p in enumerate(st.session_state.quiz):
 # -----------------------------
 # VER RESULTADOS
 # -----------------------------
-if st.
