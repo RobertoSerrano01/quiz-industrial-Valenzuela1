@@ -11,6 +11,13 @@ with open("preguntas.json", "r", encoding="utf-8") as file:
 st.title("Quiz: Procesos y Mejora Continua en Ingeniería Industrial")
 
 # -----------------------------
+# BOTÓN REINICIAR QUIZ
+# -----------------------------
+if st.button("Reiniciar Quiz"):
+    st.session_state.clear()
+    st.rerun()
+
+# -----------------------------
 # SELECCIONAR 4 PREGUNTAS RANDOM
 # -----------------------------
 if "quiz" not in st.session_state:
@@ -39,3 +46,4 @@ if st.button("Ver resultados"):
             puntaje += 1
 
     st.success(f"Tu puntaje es: {puntaje}/4")
+
