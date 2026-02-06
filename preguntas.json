@@ -1,1 +1,53 @@
+[
+  {
+    "pregunta": "¿Cuál es el objetivo principal de la mejora continua?",
+    "opciones": ["Mejorar constantemente los procesos", "Eliminar trabajadores", "Aumentar costos"],
+    "respuesta": "Mejorar constantemente los procesos"
+  },
+  {
+    "pregunta": "¿Qué herramienta ayuda a visualizar procesos paso a paso?",
+    "opciones": ["Diagrama de flujo", "Calendario", "Factura"],
+    "respuesta": "Diagrama de flujo"
+  },
+  {
+    "pregunta": "¿Qué significa Lean Manufacturing?",
+    "opciones": ["Eliminar desperdicios", "Aumentar inventarios", "Reducir calidad"],
+    "respuesta": "Eliminar desperdicios"
+  },
+  {
+    "pregunta": "¿Qué ciclo se usa en mejora continua?",
+    "opciones": ["PDCA", "ABC", "XYZ"],
+    "respuesta": "PDCA"
+  },
+  {
+    "pregunta": "¿Qué representa Kaizen?",
+    "opciones": ["Mejora continua", "Producción lenta", "Automatización total"],
+    "respuesta": "Mejora continua"
+  },
+  {
+    "pregunta": "¿Para qué sirven los KPI?",
+    "opciones": ["Medir desempeño", "Decorar informes", "Reducir datos"],
+    "respuesta": "Medir desempeño"
+  },
+  {
+    "pregunta": "¿Qué herramienta identifica causas raíz?",
+    "opciones": ["Diagrama Ishikawa", "Mapa mental", "Tabla Excel"],
+    "respuesta": "Diagrama Ishikawa"
+  },
+  {
+    "pregunta": "¿Qué busca la estandarización?",
+    "opciones": ["Consistencia", "Variación", "Desorden"],
+    "respuesta": "Consistencia"
+  },
+  {
+    "pregunta": "¿Qué mejora la eficiencia operativa?",
+    "opciones": ["Optimizar procesos", "Agregar errores", "Duplicar tareas"],
+    "respuesta": "Optimizar procesos"
+  },
+  {
+    "pregunta": "¿Qué analiza el diagrama de Pareto?",
+    "opciones": ["Problemas más importantes", "Colores", "Horarios"],
+    "respuesta": "Problemas más importantes"
+  }
+]
 
